@@ -105,19 +105,20 @@ Ctrl + F5
 
 ## 🖼 Screenshots
 
-<p align="center">
-  <img src="screenshots/home.png" width="45%" />
-  <img src="screenshots/cabins.png" width="45%" />
-</p>
-<p align="center">
-  <b>Homepage</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cabins Page</b>
-</p>
+### 🏠 Homepage
+![Homepage](path_to_your_screenshot/homepage.png)
 
-<p align="center">
-  <img src="screenshots/products.png" width="45%" />
-  <img src="screenshots/admin-dashboard.png" width="45%" />
-</p>
-<p align="center">
-  <b>Products Page</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Admin Dashboard</b>
-</p>
+<br>
 
+### 🏨 Cabins Page
+![Cabins Page](path_to_your_screenshot/cabins.png)
+
+<br>
+
+### 🍎 Products Page
+![Products Page](path_to_your_screenshot/products.png)
+
+<br>
+
+### ⚙️ Admin Dashboard
+![Admin Dashboard](path_to_your_screenshot/admin.png)
