@@ -1,0 +1,70 @@
+﻿@model FarmManagement.Models.Product
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="~/css/create-styles.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-5">Edit Product</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-card">
+                    <form asp-action="EditProduct" method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+
+                        <!-- Product Name -->
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Product Name</label>
+                            <input asp-for="Name" class="form-control" required pattern="[A-Za-zأ-ي\s]+" title="Only letters and spaces allowed." />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" required pattern="[A-Za-z0-9أ-ي\s]+" title="Only letters, numbers, and spaces allowed."></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="mb-3">
+                            <label asp-for="Price" class="form-label">Price</label>
+                            <input asp-for="Price" class="form-control" step="0.01" required />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+
+                        <!-- Product Image -->
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl" class="form-label">Product Image</label>
+                            <input type="file" name="ImageUrl" class="form-control" />
+
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <div>
+                                    <img src="@Url.Content(Model.ImageUrl)" alt="Product Image" class="img-thumbnail img-preview" />
+                                </div>
+                            }
+
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

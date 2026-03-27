@@ -1,0 +1,193 @@
+﻿/* إعدادات الجسم */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* إلغاء تأثير Flexbox على الـ body */
+body {
+    display: block; /* تغيير من flex إلى block لتجنب التداخل مع العناصر الأخرى */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc;
+
+}
+
+/* تأثير التلاشي */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+    .fade-in.visible {
+        opacity: 1;
+    }
+
+/* أزرار مخصصة */
+.btn-outline-custom {
+    border: 2px solid #3e7e3e;
+    color: #3e7e3e;
+    background-color: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+    .btn-outline-custom:hover,
+    .btn-outline-custom:focus,
+    .btn-outline-custom:active {
+        background-color: #3e7e3e;
+        color: white;
+    }
+
+/* زر التعديل */
+.btn-outline-edit {
+    border: 2px solid #ffdb2c;
+    color: #ffdb2c;
+    background-color: transparent;
+}
+
+    .btn-outline-edit:hover {
+        background-color: #ffdb2c;
+        color: white;
+    }
+
+/* زر الحذف */
+.btn-outline-delete {
+    border: 2px solid #ff2141;
+    color: #ff2141;
+    background-color: transparent;
+}
+
+    .btn-outline-delete:hover {
+        background-color: #ff2141;
+        color: white;
+    }
+
+/* التأثير على صفوف الجدول عند المرور */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* تنسيق الجدول */
+.table {
+    font-size: 0.95rem;
+}
+
+    .table td,
+    .table th {
+        padding: 0.25rem; /* تقليص الحواف داخل الجدول */
+        text-align: center;
+        vertical-align: middle;
+    }
+
+th.actions, td.actions {
+    width: 18%;
+}
+
+/* تنسيق الفورم */
+form {
+    display: inline-block;
+    margin: 0 5px; /* تقليص المسافة بين الفورم والعناصر الأخرى */
+    padding: 1px; /* تقليص الحواف الداخلية للفورم */
+    font-size: 0.85rem; /* تقليص حجم النص داخل الفورم */
+    width: 100%; /* ضمان أن الفورم يشغل العرض الكامل */
+}
+
+    /* حقول الإدخال داخل الفورم */
+    form input, form select, form textarea {
+        font-size: 0.85rem; /* تقليص حجم النص داخل الحقول */
+        padding: 0.4rem; /* تقليص الحواف الداخلية للحقول */
+        width: 100%; /* جعل الحقول تأخذ العرض الكامل المتاح */
+        margin-bottom: 8px; /* إضافة مسافة صغيرة بين الحقول */
+    }
+
+    /* الأزرار داخل الفورم */
+    form .btn {
+        font-size: 0.85rem; /* تقليص حجم النص في الأزرار */
+        padding: 0.4rem 1rem; /* تقليص الحواف الداخلية للأزرار */
+        margin-top: 5px; /* إضافة مسافة صغيرة فوق الأزرار */
+    }
+
+/* الكارت */
+.card {
+    border-radius: 8px; /* تقليص الحواف لتصبح أصغر */
+    background-color: #fefef5;
+    padding: 5px; /* تقليص المسافة داخل الكارت */
+    margin-bottom: 20px; /* تقليص المسافة السفلية */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ترويسة الجدول */
+thead {
+    background-color: #c9eebf;
+    color: black;
+    padding: 5px; /* إضافة حواف صغيرة في ترويسة الجدول */
+}
+
+/* المودال */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header.bg-danger {
+    border-bottom: none;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+}
+
+.modal-body {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+}
+.modal-footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* فئة مخصصة لتنسيق العناوين */
+.custom-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn-outline-secondary {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+.btn-danger {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+
+
+
+.container {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+}
+
+.row {
+    margin-top: 20px !important;
+}
+
+h2 {
+    margin-top: 50px !important; /* زيادة المسافة أعلى العنوان */
+    margin-bottom: 30px !important; /* المسافة السفلية */
+    padding-top: 0 !important; /* التأكد من أن لا يوجد padding علوي */
+    padding-bottom: 0 !important; /* التأكد من أن لا يوجد padding سفلي */
+}

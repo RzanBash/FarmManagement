@@ -1,0 +1,81 @@
+﻿@model FarmManagement.Models.Booking
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Booking</title>
+      <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/create-styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <div class="container ">
+        <h2 class="text-center mb-5">Edit Booking</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-card">
+                    <form asp-action="EditBooking" method="post">
+
+                        <!-- Customer Name -->
+                        <div class="mb-3">
+                            <label asp-for="CustomerName" class="form-label">Customer Name</label>
+                            <input asp-for="CustomerName" class="form-control" pattern="^[A-Za-zأ-ي ]+$" title="Customer name must contain only letters" required />
+                            <span asp-validation-for="CustomerName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" type="tel" pattern="[0-9]+" title="Phone number must contain only digits" required />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <!-- Check-In Date -->
+                        <div class="mb-3">
+                            <label asp-for="CheckInDate" class="form-label">Check-In Date</label>
+                            <input asp-for="CheckInDate" class="form-control" type="date" />
+                        </div>
+
+                        <!-- Check-Out Date -->
+                        <div class="mb-3">
+                            <label asp-for="CheckOutDate" class="form-label">Check-Out Date</label>
+                            <input asp-for="CheckOutDate" class="form-control" type="date" />
+                        </div>
+
+                        <!-- Cabin Select -->
+                        <div class="mb-3">
+                            <label asp-for="CabinId" class="form-label">Select Cabin</label>
+                            <select asp-for="CabinId" class="form-control" asp-items="@(new SelectList(ViewBag.Cabins, "Id", "Name"))">
+                                <option value="">Select Cabin</option>
+                            </select>
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-4">
+                            <label asp-for="Status" class="form-label">Status</label><br />
+                            <div class="form-check form-check-inline">
+                                <input type="radio" asp-for="Status" class="form-check-input" value="Pending" />
+                                <label class="form-check-label">Pending</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" asp-for="Status" class="form-check-input" value="Confirmed" />
+                                <label class="form-check-label">Confirmed</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary">Update Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

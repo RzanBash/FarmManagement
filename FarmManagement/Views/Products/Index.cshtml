@@ -1,0 +1,36 @@
+﻿@model List<FarmManagement.Models.Product>
+
+@{
+    ViewData["Title"] = "Farm Products";
+}
+
+  <link rel="stylesheet" href="~/css/Products.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/header-footer.css" asp-append-version="true" />
+
+
+<div class="container mt-5 py-5 px-4">
+    <h2 class="text-center mb-5 ">Our Farm Products</h2>
+    <div class="row justify-content-center">
+
+        @foreach (var product in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card product-card">
+                    <img src="@product.ImageUrl" alt="@product.Name" class="product-image" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="text-success">Price: @product.Price.ToString("C")</p>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="back-button">
+        <a href="~/Main/Index" class="btn-back">Back to Home</a>
+    </div>
+</div>
+
+

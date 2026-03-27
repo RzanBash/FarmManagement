@@ -1,0 +1,56 @@
+﻿@model FarmManagement.Models.Cabin
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Cabin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/create-styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-5">Add New Cabin</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-card">
+                    <form asp-action="CreateCabin" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Cabin Name</label>
+                            <input asp-for="Name" class="form-control" pattern="^[A-Za-zأ-ي ]+$" required />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" pattern="^[A-Za-z0-9أ-ي ]+$" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="PricePerNight" class="form-label">Price per Night</label>
+                            <input asp-for="PricePerNight" class="form-control" type="number" step="0.01" min="0" required />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Capacity" class="form-label">Capacity</label>
+                            <input asp-for="Capacity" class="form-control" type="number" min="1" required />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="IsAvailable" class="form-label">Available</label>
+                            <select asp-for="IsAvailable" class="form-control">
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="ImageUrl" class="form-label">Cabin Image</label>
+                            <input asp-for="ImageUrl" type="file" class="form-control" />
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary">Create Cabin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

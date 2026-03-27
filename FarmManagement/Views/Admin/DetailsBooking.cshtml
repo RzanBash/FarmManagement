@@ -1,0 +1,53 @@
+﻿@model FarmManagement.Models.Booking
+
+@{
+    ViewData["Title"] = "Booking Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - FarmManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/details.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-5">Booking Details</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="details-card">
+                    <dl class="row">
+                        <dt class="col-sm-4">Customer Name</dt>
+                        <dd class="col-sm-8">@Model.CustomerName</dd>
+
+                        <dt class="col-sm-4">Phone Number</dt>
+                        <dd class="col-sm-8">@Model.PhoneNumber</dd>
+
+                        <dt class="col-sm-4">Check-in</dt>
+                        <dd class="col-sm-8">@Model.CheckInDate.ToString("yyyy-MM-dd")</dd>
+
+                        <dt class="col-sm-4">Check-out</dt>
+                        <dd class="col-sm-8">@Model.CheckOutDate.ToString("yyyy-MM-dd")</dd>
+
+                        <dt class="col-sm-4">Status</dt>
+                        <dd class="col-sm-8">@Model.Status</dd>
+
+                        <dt class="col-sm-4">Cabin</dt>
+                        <dd class="col-sm-8">@Model.Cabin?.Name</dd>
+                    </dl>
+
+                    <div class="button-container">
+                        <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿body {
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.activities-section {
+    padding: 60px 0; /* قللت المسافة العليا والسفلية */
+}
+
+
+    .activities-section h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2.0rem;
+        color: #3a4d39;
+        margin-top: -30px; /* يرفع النص للأعلى */
+    }
+
+    .activities-section p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+.text-center {
+    text-align: left;
+    padding: 20px;
+}
+
+.swiper {
+    width: 70%; /* جعلت العرض أصغر ليكون أكثر تناسق */
+    max-width: 450px; /* حدي أقصى للسلايدر */
+    margin: auto;
+    border-radius: 15px; /* حواف أقل */
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* تخفيف الظل */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 400px; /* كبرنا الطول */
+    object-fit: cover;
+    border-radius: 12px; /* لمسة ناعمة أكثر */
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #2d6a4f;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 40px; /* تقليص حجم الأزرار */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    font-size: 14px; /* تصغير حجم الأيقونة */
+}
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background: #2d6a4f;
+        color: white;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 16px; /* <<< الحجم الداخلي للسهم */
+    }
+
+.swiper-pagination-bullet {
+    background: #2d6a4f;
+    opacity: 0.7;
+    width: 11px; /* قللت حجم النقاط */
+    height: 11px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #1b4332;
+}

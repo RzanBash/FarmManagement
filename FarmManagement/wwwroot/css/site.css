@@ -1,0 +1,455 @@
+﻿
+/*body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-outline-success:hover {
+    background-color: #3a4d39;
+    color: #fff;
+    border-color: #3a4d39;
+}
+
+.btn-outline-success2 {
+    background-color: #3a4d39;
+    color: #fff;
+    border-color: #3a4d39;
+}*/
+
+/* صور الأقسام */
+/*.image-box {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+
+/* فواصل الأقسام */
+/*section:not(#hero) {
+    padding: 60px 0;
+}
+
+    section:nth-of-type(even) {
+        background-color: #f9f9f9;
+    }
+
+    section:nth-of-type(odd) {
+        background-color: #ffffff;
+    }
+
+
+
+
+
+  
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);*/ /* شفافية فوق الصورة */
+    /*z-index: 1;
+}*/
+
+
+
+/* سكشن الصورة */
+/*.hero-section {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}*/
+
+/* النص */
+/*.hero-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+    .hero-text p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }*/
+
+/* تأثير التحريك عند تحميل الصور */
+/*@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+/* تنسيق الصور */
+/*.hero-img {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    animation: fadeIn 1.5s ease-out;*/ /* تأثير الصورة */
+/*}*/
+
+/* تنسيق النص داخل الـ Carousel */
+/*.carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    animation: fadeIn 2s ease-out;
+}
+
+    .carousel-container h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+.btn-primary img {
+    width: 150px;*/ /* حجم الصورة */
+    /*height: auto;
+    display: block;
+    margin: 0 auto;*/ /* محاذاة الصورة في المنتصف */
+/*}*/
+
+
+
+
+
+
+
+
+/* About Us Section */
+/*.about-us-section {
+    padding: 60px 0;
+    color: #333;
+
+    
+}
+
+
+    .about-us-section h2 {
+        font-size: 2.5rem;
+        color: #1b5e20;
+        margin-bottom: 20px;
+    }
+
+    .about-us-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }*/
+
+/* فئة لضبط الهوامش الخاصة بعمود النص */
+/*.text-column {
+    padding-left: 40px;*/ /* يمكنك تعديل القيمة حسب الحاجة */
+/*}*/
+
+/* تنسيق الصورة */
+/*.about-image {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .about-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    }*/
+
+
+
+/* تنسيق موحد للأقسام */
+/*.section-block {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+    .section-block:nth-of-type(even) {
+        background-color: #ffffff;
+    }*/
+
+    /* تنسيق الأعمدة */
+    /*.section-block .col-md-6 {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }*/
+
+/* تنسيق الصور */
+/*.image-box {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+
+/* تنسيق النص */
+/*.text-content {
+    text-align: left;
+}
+
+    .text-content h3 {
+        margin-bottom: 15px;
+        color: #3a4d39;
+    }
+
+    .text-content p {
+      
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }*/
+
+
+
+
+/* زر موحد */
+/*.btn-outline-success {
+    border-color: #3a4d39;
+    color: #3a4d39;
+    transition: all 0.3s ease;
+}
+
+    .btn-outline-success:hover {
+        background-color: #3a4d39;
+        color: #fff;
+        border-color: #3a4d39;
+    }*/
+
+/* سكشن المنتجات العضوية */
+/*.organic-products-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}*/
+
+/* النص بمحاذاة اليسار */
+/*.text-content {
+    text-align: left;
+}*/
+
+/* تنسيق الصورة */
+/*.product-img-box {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #ccc;
+    animation: fadeInRight 1.2s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);*/ /* ظل ناعم */
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/ /* تأثير ناعم */
+/*}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}*/
+
+/* تأثير الهوفر */
+/*.product-img-box:hover {
+    transform: scale(1.03);*/ /* تكبير بسيط */
+    /*box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);*/ /* ظل أقوى */
+/*}*/
+
+/* أنيميشن دخول من اليمين */
+/*@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.section-padding-left {
+    padding-left: 45px;*/ /* تقدر تغيرين الرقم حسب المساحة اللي تبينها */
+/*}
+
+.section-text-left {
+    text-align: left;
+}
+
+
+
+.activities-text,
+.cottages-text {
+    text-align: left;
+    padding: 20px;
+}
+
+    .activities-text h3,
+    .cottages-text h3 {
+        margin-bottom: 15px;
+        color: #3a4d39;
+    }
+
+    .activities-text p,
+    .cottages-text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+
+.cabins-section {
+    background-color: #f5f5f5;
+}
+
+.cabin-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .cabin-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+.cabin-img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid #3a4d39;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.custom-cabin-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    opacity: 0; 
+    overflow: hidden; 
+}
+    .custom-cabin-card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+    }
+
+    .custom-cabin-card img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 15px 15px 0 0; 
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .custom-cabin-card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+    }
+
+
+    .custom-cabin-card:hover img {
+        transform: scale(1.05); 
+        filter: brightness(1.1); 
+    }
+
+
+
+.custom-contact-btn {
+    background-color: transparent;
+    color: #3a4d36;
+    border: 2px solid #2d6a4f;
+    border-radius: 10px;
+    padding: 8px 14px; 
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+    .custom-contact-btn:hover {
+        background-color: #3a4d39;
+        color: #fff;
+        border-color: #3a4d39;
+    }*/
+
+
+
+

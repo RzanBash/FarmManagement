@@ -1,0 +1,58 @@
+﻿@model FarmManagement.Models.Cabin
+
+@{
+    ViewData["Title"] = "Cabin Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - FarmManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/details.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="container ">
+        <h2 class="text-center mb-5">Cabin Details</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="details-card">
+                    <!-- إضافة مكان لعرض الصورة -->
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <div class="text-center">
+                            <img src="@Model.ImageUrl" alt="Cabin Image" class="details-image"  />
+                        </div>
+                    }
+
+                    <dl class="row">
+                        <dt class="col-sm-4">Name</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4">Description</dt>
+                        <dd class="col-sm-8">@Model.Description</dd>
+
+                        <dt class="col-sm-4">Price Per Night</dt>
+                        <dd class="col-sm-8">@Model.PricePerNight</dd>
+
+                        <dt class="col-sm-4">Capacity</dt>
+                        <dd class="col-sm-8">@Model.Capacity</dd>
+
+                        <dt class="col-sm-4">Availability</dt>
+                        <dd class="col-sm-8">@((Model.IsAvailable.GetValueOrDefault()) ? "Available" : "Not Available")</dd>
+                    </dl>
+
+                    <div class="button-container">
+                        <a asp-action="Index" class="btn btn-outline-secondary mt-3">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

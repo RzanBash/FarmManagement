@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FarmManagement</title>    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Header Styles */
+        .navbar-custom {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding-top: 15px; /* مسافة أعلى */
+            padding-bottom: 15px; /* مسافة أسفل */
+        }
+
+        .navbar-custom .navbar-brand {
+            color: black !important;
+        }
+
+        .navbar-custom .nav-link {
+            color: #2d6a4f;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: 0.3s ease;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #1b4332;
+        }
+
+        .navbar-custom.scrolled {
+            background-color: #2d6a4f !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-custom.scrolled .navbar-brand,
+        .navbar-custom.scrolled .nav-link {
+            color: #fff !important;
+        }
+
+
+footer {
+    min-height: 180px; /* رفع الحد الأدنى للارتفاع */
+    padding-top: 20px;  /* زيادة المسافة من الأعلى */
+    padding-bottom: 40px; /* زيادة المسافة من الأسفل */
+    background-color: #2d6a4f;
+    color: #eee;
+    padding-left: 20px; /* إضافة مسافة على اليسار */
+    padding-right: 20px; /* إضافة مسافة على اليمين */
+    text-align: center; /* إضافة محاذاة للنص */
+}
+
+footer .mb-4 {
+    margin-bottom: 15px !important;
+}
+
+footer h5 {
+    color: #d8f3dc;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #b7e4c7;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #95d5b2;
+    text-decoration: underline;
+}
+.social-icons a {
+    color: #1b4332; /* أخضر غامق أنيق */
+    font-size: 1.3rem; /* قلل حجم الأيقونات */
+    margin-right: 10px; /* قلل المسافة بين الأيقونات */
+    transition: 0.3s ease;
+    text-decoration: none; /* يمنع ظهور الخط تحت الأيقونات */
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">🌿 Green Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="Login">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Main" asp-action="Cabins">Cabins</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <main class="mt-5 pt-4">
+    <div class="container">
+        @RenderBody()
+    </div>
+</main>
+
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6 mb-4">
+                    <h5>About the Farm</h5>
+                    <p>We offer you a unique relaxation experience among nature,<br /> fresh products, and elegant countryside cabins.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-phone me-2"></i>05555</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@farm.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/" target="_blank" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" class="social-icon" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center small mb-0">© 2025 Farm Cabins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll effect for navbar -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const nav = document.querySelector(".navbar-custom");
+            if (window.scrollY > 50) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

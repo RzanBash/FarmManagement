@@ -1,0 +1,120 @@
+﻿body {
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+}
+
+.contact-container {
+    background-color: #d9ead3;
+    padding: 20px; /* قلل المسافة الداخلية */
+    border-radius: 15px;
+    max-width: 500px; /* قلل العرض */
+    margin: 10px auto; /* قلل المسافة العلوية والسفلية */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+    .contact-container:hover {
+        transform: scale(1.02);
+    }
+
+form .form-group {
+    margin-bottom: 15px; /* قلل المسافة بين الحقول */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px; /* قلل المسافة السفلية */
+    color: #333;
+    font-size: 1.8em; /* قلل حجم الخط */
+    font-weight: 600;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 8px; /* قلل التدوير */
+    margin-bottom: 15px; /* قلل المسافة بين الحقول */
+    padding: 10px; /* قلل الحشو الداخلي */
+    font-size: 1em; /* قلل حجم الخط */
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: #2d6a4f;
+        box-shadow: 0 0 8px rgba(45, 106, 79, 0.4);
+    }
+
+.btn-send {
+    background-color: transparent;
+    color: #3a4d36;
+    border: 2px solid #2d6a4f;
+    border-radius: 8px; /* قلل التدوير */
+    padding: 8px 18px; /* قلل الحجم */
+    font-weight: 500;
+    font-size: 1em; /* قلل حجم الخط */
+    transition: all 0.3s ease;
+    margin-top: 10px; /* قلل المسافة العليا */
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .btn-send:hover {
+        background-color: #2d6a4f;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .btn-send:active {
+        transform: scale(1.02);
+    }
+
+.contact-info {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.05em;
+}
+
+.social-icons a {
+    color: #1b4332; /* أخضر غامق أنيق */
+    font-size: 1.3rem; /* قلل حجم الأيقونات */
+    margin-right: 10px; /* قلل المسافة بين الأيقونات */
+    transition: 0.3s ease;
+    text-decoration: none; /* يمنع ظهور الخط تحت الأيقونات */
+}
+
+    .social-icons a:hover {
+        color: #ffffff;
+        transform: scale(1.2);
+    }
+
+.btn-back {
+    background-color: transparent;
+    color: #3a4d36;
+    border: 2px solid #2d6a4f;
+    border-radius: 8px; /* قلل التدوير */
+    padding: 8px 18px; /* قلل الحجم */
+    font-weight: 500;
+    font-size: 1em; /* قلل حجم الخط */
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .btn-back:hover {
+        background-color: #2d6a4f;
+        color: white;
+        transform: scale(1.05);
+    }

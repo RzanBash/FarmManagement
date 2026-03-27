@@ -1,0 +1,75 @@
+﻿/* تنسيق الجسم العام للصفحة */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    margin-top: -40px; /* رفع العنوان للأعلى */
+    margin-bottom: 20px; /* عشان ما يلصق باللي تحته */
+    text-align: center; /* اذا تبينه يجي بالنص */
+}
+
+
+.product-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+    .product-card:hover {
+        transform: scale(1.05); /* زيادة الحجم عند التمرير */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+.product-image {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d6a4f;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.text-success {
+    color: #38a169 !important;
+    font-weight: bold;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #3a4d39;
+    border: 2px solid #2d6a4f;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .btn-back:hover {
+        background-color: #2d6a4f;
+        color: white;
+        transform: scale(1.05);
+    }

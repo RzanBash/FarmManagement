@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc;
+
+}
+
+h2 {
+    color: #2f4f4f;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label {
+    color: #2f4f4f;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.form-card img,
+.booking-card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #3e7e3e;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+}
+
+    .btn-primary:hover {
+        background-color: #345f34;
+    }
+
+.form-card,
+.booking-card {
+    background-color: #fefef5;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}

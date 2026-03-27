@@ -1,0 +1,75 @@
+﻿@model FarmManagement.Models.AdminViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - FarmManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<section class="login-section">
+    <div class="login-card">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="~/Images/log.jpg" alt="Login image" class="img-fluid"
+                         style="border-top-left-radius: 15px; border-bottom-left-radius: 15px; object-fit: cover;" />
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body px-5 py-4 text-dark form-container">
+
+                        <form method="post">
+                            <div class="mb-3 pb-1 text-start">
+                                <i class="fas fa-cubes fa-2x me-2" style="color: #3e7e3e;"></i>
+                                <span class="h1 fw-bold mb-3">Green Haven</span>
+                            </div>
+
+                            <h5 class="fw-normal mb-3 pb-3 login-title">Log in to your account</h5>
+
+                            @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    @ViewData["ErrorMessage"]
+                                </div>
+                            }
+
+                            <div class="form-outline mb-4">
+                                <input type="text" id="Username" name="Username"
+                                       class="form-control form-control-lg"
+                                       required pattern="[A-Za-z]+$"
+                                       title="Username must consist of English letters only." />
+                                <label class="form-label" for="Username">Username</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="Password" name="Password"
+                                       class="form-control form-control-lg"
+                                       required pattern="^\d+$"
+                                       title="Password must consist of numbers only." />
+                                <label class="form-label" for="Password">Password</label>
+                            </div>
+
+                            <div class="pt-1 mb-4">
+                                <button type="submit" class="btn btn-lg btn-block btn-login">Login</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
