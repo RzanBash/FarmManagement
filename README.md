@@ -102,23 +102,28 @@ Ctrl + F5
 * Email notification system
 
 ---
-
 ## 🖼 Screenshots
 
-### 🏠 Homepage
-![Homepage](path_to_your_screenshot/homepage.png)
+<p align="center">
+  <img src="screenshots/home.png" width="70%" />
+  <br/>
+  <b>Homepage</b>
+</p>
 
-<br>
+<p align="center">
+  <img src="screenshots/cabins.png" width="70%" />
+  <br/>
+  <b>Cabins Page</b>
+</p>
 
-### 🏨 Cabins Page
-![Cabins Page](path_to_your_screenshot/cabins.png)
+<p align="center">
+  <img src="screenshots/products.png" width="70%" />
+  <br/>
+  <b>Products Page</b>
+</p>
 
-<br>
-
-### 🍎 Products Page
-![Products Page](path_to_your_screenshot/products.png)
-
-<br>
-
-### ⚙️ Admin Dashboard
-![Admin Dashboard](path_to_your_screenshot/admin.png)
+<p align="center">
+  <img src="screenshots/admin-dashboard.png" width="70%" />
+  <br/>
+  <b>Admin Dashboard</b>
+</p>
