@@ -104,18 +104,20 @@ Ctrl + F5
 ---
 
 ## 🖼 Screenshots
+
 <p align="center">
-  <img src="screenshotss/home.png" width="45%" />
-  <img src="screenshotss/cabins.png" width="45%" />
+  <img src="screenshots/home.png" width="45%" />
+  <img src="screenshots/cabins.png" width="45%" />
 </p>
 <p align="center">
   <b>Homepage</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cabins Page</b>
 </p>
 
 <p align="center">
-  <img src="screenshotss/products.png" width="45%" />
-  <img src="screenshotss/admin-dashboard.png" width="45%" />
+  <img src="screenshots/products.png" width="45%" />
+  <img src="screenshots/admin-dashboard.png" width="45%" />
 </p>
 <p align="center">
   <b>Products Page</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Admin Dashboard</b>
 </p>
+
