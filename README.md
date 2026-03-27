@@ -105,8 +105,8 @@ Ctrl + F5
 
 ## 🖼 Screenshots
 
-* Homepage
-* Cabins Page
-* Products Page
-* Admin Dashboard
+* home
+* cabins
+* products
+* admin-dashboard
 
