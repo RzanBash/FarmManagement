@@ -71,7 +71,7 @@ wwwroot/images
 1. Clone the repository:
 
 ```id="n2f9qe"
-git clone https://github.com/RzanDav/FarmManagement.git
+git clone https://github.com/RzanBash/FarmManagement.git
 ```
 
 2. Open the project in **Visual Studio 2022**
