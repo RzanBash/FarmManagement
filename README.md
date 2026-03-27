@@ -105,8 +105,18 @@ Ctrl + F5
 
 ## 🖼 Screenshots
 
-* home
-* cabins
-* products
-* admin-dashboard
+<p align="center">
+  <img src="screenshots/home.png" width="45%" />
+  <img src="screenshots/cabins.png" width="45%" />
+</p>
+<p align="center">
+  <b>Homepage</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Cabins</b>
+</p>
 
+<p align="center">
+  <img src="screenshots/products.png" width="45%" />
+  <img src="screenshots/admin-dashboard.png" width="45%" />
+</p>
+<p align="center">
+  <b>Products</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Admin Dashboard</b>
+</p>
